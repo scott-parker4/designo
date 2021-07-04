@@ -1,0 +1,39 @@
+.hero.projectHero {
+  background-image: url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+  background-position: top 0 right -25px;
+  background-size: 1000px;
+  min-height: 320px;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+
+.hero.projectHero.aboutHero {
+  margin-bottom: 0;
+}
+
+.hero.projectHero p {
+  margin-bottom: 0;
+}
+
+.heroText.projectHeroText {
+  padding-top: 0;
+}
+
+.projectTextCard {
+  padding: 24px 24px 55px 24px;
+}
+
+.projectTitle {
+  color: var(--peach);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.5rem;
+}
+
+.projectText {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}

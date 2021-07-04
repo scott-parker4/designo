@@ -1,0 +1,13 @@
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutCardText {
+  padding: 80px 18px;
+}
+
+.aboutCardHeadline {
+  color: var(--peach);
+}

@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
+@import "webDesign.css";
+@import "button.css";
+@import "about.css";
+
+:root {
+  /* Primary Colors */
+  --peach: hsl(11, 73%, 66%);
+  --black: hsl(270, 3%, 11%);
+  /* Secondary Colors */
+  --lightPeach: hsl(11, 100%, 80%);
+  --darkGrey: hsl(264, 5%, 20%);
+}
+
+html {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  line-height: 1.4rem;
+  word-spacing: 0.1rem;
+}
+
+body {
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 375px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 24px 34px 24px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+
+.navLogo {
+  width: 202px;
+  height: 27px;
+}
+
+.navLinks {
+  display: none;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  background-color: var(--peach);
+  width: 100%;
+  min-height: 843px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  overflow: hidden;
+}
+
+.heroText {
+  padding: 80px 18px 0 18px;
+  text-align: center;
+}
+
+.heroText p {
+  margin-bottom: 25px;
+}
+
+.heroPhone {
+  width: 600px;
+  position: absolute;
+  top: 330px;
+}
+
+.heroHeadline {
+  margin-top: 0;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 327px;
+  width: 80%;
+  height: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.8rem;
+  margin-bottom: 24px;
+  color: white;
+  font-weight: 500;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project h3 {
+  letter-spacing: 0.4rem;
+  margin: 0;
+}
+
+.project h3:after {
+  content: url(../assets/shared/desktop/icon-right-arrow.svg);
+}
+
+.webDesignCard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/home/mobile/image-web-design.jpg);
+  margin-top: 120px;
+}
+
+.appDesignCard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/home/mobile/image-app-design.jpg);
+}
+
+.graphicDesignCard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/home/mobile/image-graphic-design.jpg);
+}
+
+.projectArrow {
+  display: inline;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.aboutUsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  min-width: 327px;
+}
+
+.aboutUsText {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.aboutUsText h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.talk {
+  background-color: var(--peach);
+  color: white;
+  text-align: center;
+  padding: 60px 20px 60px 20px;
+  width: 80%;
+  border-radius: 0.8rem;
+  align-self: center;
+  transform: translateY(-190px);
+  position: absolute;
+  background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
+  background-repeat: no-repeat;
+  background-position: right -305px bottom -90px;
+}
+
+.talk h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  margin-top: 0;
+}
+
+.talk button {
+  margin-top: 17px;
+}
+
+.footer {
+  background-color: var(--black);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 190px;
+}
+
+.footerLogo {
+  padding-top: 190px;
+  margin: 64px 0;
+}
+
+.footerNav {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footerNav li {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 32px;
+}
+
+.footerContact {
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+.footerContact h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.footer-Contact p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footerContactBold {
+  font-weight: 700;
+}
+
+.social {
+  margin-bottom: 65px;
+}
+
+.social img:not(:last-child) {
+  margin-right: 12px;
+}
+
+/* Project Page Base Styles */
+
+.singleProjectContainer {
+  padding: 0px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.projectImg {
+  width: 100%;
+}
+
+.roundedImg {
+  border-radius: 0.8rem 0.8rem 0 0;
+}
