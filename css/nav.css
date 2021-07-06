@@ -23,7 +23,7 @@
   transform: scale(0%);
   transform-origin: top right;
   transition: all 0.2s ease-out;
-  transition-timing-function: cubic-bezier(0.59,-0.02, 0.75, 1.02);
+  transition-timing-function: cubic-bezier(0.59, -0.02, 0.75, 1.02);
 }
 
 .overlay {
@@ -36,8 +36,7 @@
   transform: scale(0%);
   transform-origin: top right;
   transition: all 0.2s ease-out;
-  transition-timing-function: cubic-bezier(0.59,-0.02, 0.75, 1.02);
-}
+  transition-timing-function: cubic-bezier(0.59, -0.02, 0.75, 1.02);
 }
 
 .mobileNav .navLinks {
