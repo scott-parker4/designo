@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=fallback"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
@@ -16,10 +22,11 @@
           alt="Header Logo"
           class="navLogo"
         />
-        <nav>
+        <nav class="headerNav">
           <img
             src="./assets/shared/mobile/icon-hamburger.svg"
             alt="Open navigation"
+            class="burger"
           />
           <ul class="navLinks">
             <li>Our Company</li>
@@ -28,7 +35,15 @@
           </ul>
         </nav>
       </header>
+      <nav class="mobileNav">
+        <ul class="navLinks">
+          <li>Our Company</li>
+          <li>Locations</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
       <main>
+        <div class="overlay"></div>
         <div class="hero">
           <div class="heroText">
             <h1 class="heroHeadline">
@@ -164,5 +179,6 @@
         </footer>
       </main>
     </div>
+    <script type="text/javascript" src="./scripts/nav.js"></script>
   </body>
 </html>

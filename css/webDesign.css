@@ -9,6 +9,8 @@
 
 .hero.projectHero.aboutHero {
   margin-bottom: 0;
+  background-size: 850px;
+  background-position: top -160px right 0px;
 }
 
 .hero.projectHero p {
@@ -16,7 +18,7 @@
 }
 
 .heroText.projectHeroText {
-  padding-top: 0;
+  padding: 80px 25px;
 }
 
 .projectTextCard {

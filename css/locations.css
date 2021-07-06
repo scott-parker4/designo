@@ -1,0 +1,33 @@
+.mapCard {
+  min-height: 320px;
+  width: 100%;
+}
+
+.locationsCard {
+  text-align: center;
+}
+
+.locationsAddress {
+  padding: 80px 24px;
+}
+
+.locationsTitle {
+  font-weight: 500;
+  color: var(--peach);
+}
+
+.locationH4 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.locationsContact p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 4px;
+  line-height: 1.7rem;
+}
+
+.locationsContact div:first-child {
+  margin-bottom: 30px;
+}
