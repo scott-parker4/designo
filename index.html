@@ -17,17 +17,19 @@
   <body>
     <div class="bodyContainer">
       <header>
-        <img
-          src="./assets/shared/desktop/logo-dark.png"
-          alt="Header Logo"
-          class="navLogo"
-        />
-        <nav class="headerNav">
+        <a href="index.html">
           <img
-            src="./assets/shared/mobile/icon-hamburger.svg"
-            alt="Open navigation"
-            class="burger"
+            src="./assets/shared/desktop/logo-dark.png"
+            alt="Header Logo"
+            class="navLogo"
           />
+        </a>
+        <nav class="headerNav">
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           <ul class="navLinks">
             <li>Our Company</li>
             <li>Locations</li>
@@ -37,9 +39,9 @@
       </header>
       <nav class="mobileNav">
         <ul class="navLinks">
-          <li>Our Company</li>
-          <li>Locations</li>
-          <li>Contact</li>
+          <li><a href="about.html">Our Company</a></li>
+          <li><a href="locations.html"></a>Locations</li>
+          <li><a href="contact.html"></a>Contact</li>
         </ul>
       </nav>
       <main>
@@ -54,7 +56,7 @@
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <button class="button">Learn more</button>
+            <button class="button"><a href="about.html">Learn more</a></button>
           </div>
           <img
             src="./assets/home/desktop/image-hero-phone.png"
@@ -64,16 +66,19 @@
         </div>
         <section class="projectsContainer">
           <div class="project webDesignCard">
+            <div class="projectOverlay"></div>
             <h2>Web Design</h2>
-            <h3>View Projects</h3>
+            <h3><a href="web-design.html">View Projects</a></h3>
           </div>
           <div class="project appDesignCard">
+            <div class="projectOverlay"></div>
             <h2>App Design</h2>
-            <h3>View Projects</h3>
+            <h3><a href="app-design.html">View Projects</a></h3>
           </div>
           <div class="project graphicDesignCard">
+            <div class="projectOverlay"></div>
             <h2>Graphic Design</h2>
-            <h3>View Projects</h3>
+            <h3><a href="graphic-design.html">View Projects</a></h3>
           </div>
         </section>
         <section class="aboutUs">
@@ -134,15 +139,18 @@
             </p>
             <button class="button">get in touch</button>
           </section>
-          <img
-            src="./assets/shared/desktop/logo-light.png"
-            alt="footer logo"
-            class="navLogo footerLogo"
-          />
+          <a href="index.html">
+            <img
+              src="./assets/shared/desktop/logo-light.png"
+              alt="footer logo"
+              class="navLogo footerLogo"
+            />
+          </a>
+          <hr />
           <ul class="footerNav">
-            <li>our company</li>
-            <li>locations</li>
-            <li>contact</li>
+            <li><a href="about.html">Our Company</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="footerContact">
             <p>

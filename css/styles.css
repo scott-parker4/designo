@@ -3,10 +3,12 @@
 @import "about.css";
 @import "locations.css";
 @import "nav.css";
+@import "contact.css";
+@import "hamburger.css";
 
 :root {
   /* Primary Colors */
-  --peach: hsl(11, 73%, 66%);
+  --peach: rgb(232, 128, 105);
   --black: hsl(270, 3%, 11%);
   /* Secondary Colors */
   --lightPeach: hsl(11, 100%, 80%);
@@ -68,10 +70,20 @@ header {
   position: relative;
 }
 
+header a {
+  display: flex;
+  align-items: center;
+}
+
 p {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navLogo {
@@ -136,15 +148,21 @@ p {
   font-weight: 500;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .project h3 {
   letter-spacing: 0.4rem;
   margin: 0;
+  z-index: 6;
 }
 
 .project h3:after {
   content: url(../assets/shared/desktop/icon-right-arrow.svg);
+}
+
+.project h2 {
+  z-index: 6;
 }
 
 .webDesignCard {
@@ -165,6 +183,21 @@ p {
 
 .projectArrow {
   display: inline;
+}
+
+.projectOverlay {
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 0.8rem;
+  transition: all 0.2s;
+}
+
+.projectOverlay:hover {
+  background-color: var(--peach);
 }
 
 .aboutUs {
@@ -233,7 +266,7 @@ p {
 
 .footerLogo {
   padding-top: 190px;
-  margin: 64px 0;
+  margin: 64px 0 25px 0;
 }
 
 .footerNav {
@@ -261,11 +294,6 @@ p {
   margin-bottom: 0;
 }
 
-.footer-Contact p {
-  font-weight: 400;
-  font-size: 16px;
-}
-
 .footerContactBold {
   font-weight: 700;
 }
@@ -276,6 +304,13 @@ p {
 
 .social img:not(:last-child) {
   margin-right: 12px;
+}
+
+hr {
+  border-top: 1px solid var(--darkGrey);
+  width: 80%;
+  opacity: 0.5;
+  margin-bottom: 30px;
 }
 
 /* Project Page Base Styles */

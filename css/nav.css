@@ -6,37 +6,38 @@
   list-style-type: none;
 }
 
+.navLinks li:hover,
+.footerNav li:hover {
+  opacity: 0.5;
+}
+
 .mobileNav {
   position: absolute;
   background-color: var(--black);
-  top: 117px;
+  top: 122px;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 2001;
   color: white;
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
   padding: 48px 24px;
-  visibility: hidden;
-  transform: scale(0%);
-  transform-origin: top right;
-  transition: all 0.2s ease-out;
-  transition-timing-function: cubic-bezier(0.59, -0.02, 0.75, 1.02);
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
 }
 
 .overlay {
-  visibility: hidden;
   position: absolute;
   width: 100%;
+  opacity: 0;
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
-  z-index: 2;
-  transform: scale(0%);
-  transform-origin: top right;
-  transition: all 0.2s ease-out;
-  transition-timing-function: cubic-bezier(0.59, -0.02, 0.75, 1.02);
+  z-index: 2000;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: opacity 0.8s;
 }
 
 .mobileNav .navLinks {
@@ -49,6 +50,6 @@
 }
 
 .active {
-  visibility: visible;
-  transform: scale(100%);
+  transform: translate3d(0vw, 0, 0);
+  opacity: 1;
 }

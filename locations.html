@@ -32,10 +32,11 @@
           alt="Header Logo"
           class="navLogo"
         />
-        <nav>
+        <nav class="headerNav">
           <img
             src="./assets/shared/mobile/icon-hamburger.svg"
             alt="Open navigation"
+            class="burger"
           />
           <ul class="navLinks">
             <li>Our Company</li>
@@ -44,7 +45,15 @@
           </ul>
         </nav>
       </header>
+      <nav class="mobileNav">
+        <ul class="navLinks">
+          <li>Our Company</li>
+          <li>Locations</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
       <main>
+        <div class="overlay"></div>
         <section class="locations">
           <div class="locationsCard">
             <div id="canadaMap" class="mapCard"></div>
@@ -133,6 +142,7 @@
             alt="footer logo"
             class="navLogo footerLogo"
           />
+          <hr />
           <ul class="footerNav">
             <li>our company</li>
             <li>locations</li>
@@ -174,8 +184,6 @@
       </main>
     </div>
     <script type="text/javascript" src="./scripts/leaflet.js"></script>
+    <script type="text/javascript" src="./scripts/nav.js"></script>
   </body>
 </html>
-Australia Designo AU Office 19 Balonne Street New South Wales 2443 Contact P :
-(02) 6720 9092 M : contact@designo.au United Kingdom Designo UK Office 13
-Colorado Way Rhyd-y-fro SA8 9GA Contact P : 078 3115 1400 M : contact@designo.uk

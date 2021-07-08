@@ -4,6 +4,7 @@
   border: none;
   text-transform: uppercase;
   font-weight: 500;
+  transition: all 0.2s;
 }
 
 .buttonPeach {
@@ -15,4 +16,8 @@
   background-color: var(--peach);
   color: white;
   margin-top: 20px;
+}
+
+.button:hover {
+  background-color: var(--lightPeach);
 }
