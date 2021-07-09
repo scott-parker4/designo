@@ -16,7 +16,5 @@
     "url": "https://github.com/scottparkerdesign/designo/issues"
   },
   "homepage": "https://github.com/scottparkerdesign/designo#readme",
-  "dependencies": {
-    "dotenv": "^10.0.0"
-  }
+  "dependencies": {}
 }
