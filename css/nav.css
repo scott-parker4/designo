@@ -5,10 +5,41 @@
 .navLinks {
   list-style-type: none;
 }
-
-.navLinks li:hover,
+/*
+.navLinks li:hover,*/
 .footerNav li:hover {
   opacity: 0.5;
+  transition: all 0.2s;
+}
+
+/* Underline styles */
+.navLink {
+  position: relative;
+  padding: 0.005rem 0;
+}
+
+/* Fade in */
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.navLink::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.navLink:hover::after,
+.navLink:focus::after {
+  transform: scale(1);
 }
 
 .mobileNav {
@@ -52,4 +83,8 @@
 .active {
   transform: translate3d(0vw, 0, 0);
   opacity: 1;
+}
+
+.notVisible {
+  visibility: hidden;
 }

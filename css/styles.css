@@ -2,7 +2,7 @@
 @import "button.css";
 @import "about.css";
 @import "locations.css";
-@import "nav.css";
+
 @import "contact.css";
 @import "hamburger.css";
 
@@ -155,6 +155,7 @@ a {
   letter-spacing: 0.4rem;
   margin: 0;
   z-index: 6;
+  pointer-events: none;
 }
 
 .project h3:after {
@@ -163,6 +164,7 @@ a {
 
 .project h2 {
   z-index: 6;
+  pointer-events: none;
 }
 
 .webDesignCard {
@@ -194,6 +196,7 @@ a {
   position: absolute;
   border-radius: 0.8rem;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .projectOverlay:hover {
@@ -302,8 +305,13 @@ a {
   margin-bottom: 65px;
 }
 
-.social img:not(:last-child) {
+.social a:not(:last-child) {
   margin-right: 12px;
+}
+
+.social a:hover {
+  filter: invert(0.5);
+  transition: all 0.2s;
 }
 
 hr {

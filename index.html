@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | Designo Agency Website Challenge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +12,9 @@
     />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
     <div class="bodyContainer">
@@ -24,6 +26,11 @@
             class="navLogo"
           />
         </a>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
         <nav class="headerNav">
           <button class="hamburger hamburger--squeeze" type="button">
             <span class="hamburger-box">
@@ -31,7 +38,7 @@
             </span>
           </button>
           <ul class="navLinks">
-            <li>Our Company</li>
+            <li><a href="about.html">Our Company</a></li>
             <li>Locations</li>
             <li>Contact</li>
           </ul>
@@ -39,11 +46,16 @@
       </header>
       <nav class="mobileNav">
         <ul class="navLinks">
-          <li><a href="about.html">Our Company</a></li>
-          <li><a href="locations.html"></a>Locations</li>
-          <li><a href="contact.html"></a>Contact</li>
+          <li><a class="navLink" href="about.html">Our Company</a></li>
+          <li><a class="navLink" href="locations.html">Locations</a></li>
+          <li><a class="navLink" href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- ============================================ -->
+      <!--                    Main                   -->
+      <!-- ============================================ -->
+
       <main>
         <div class="overlay"></div>
         <div class="hero">
@@ -64,23 +76,36 @@
             class="heroPhone"
           />
         </div>
+
+        <!-- ============================================ -->
+        <!--                    PROJECTS                   -->
+        <!-- ============================================ -->
+
         <section class="projectsContainer">
           <div class="project webDesignCard">
-            <div class="projectOverlay"></div>
+            <a href="web-design.html">
+            <div class="projectOverlay"></div></a>
             <h2>Web Design</h2>
-            <h3><a href="web-design.html">View Projects</a></h3>
+            <h3>View Projects</a></h3>
           </div>
           <div class="project appDesignCard">
-            <div class="projectOverlay"></div>
+            <a href="web-design.html">
+              <div class="projectOverlay"></div></a>
             <h2>App Design</h2>
             <h3><a href="app-design.html">View Projects</a></h3>
           </div>
           <div class="project graphicDesignCard">
-            <div class="projectOverlay"></div>
+            <a href="web-design.html">
+              <div class="projectOverlay"></div></a>
             <h2>Graphic Design</h2>
             <h3><a href="graphic-design.html">View Projects</a></h3>
           </div>
         </section>
+
+        <!-- ============================================ -->
+        <!--                    ABOUT                     -->
+        <!-- ============================================ -->
+
         <section class="aboutUs">
           <div class="aboutUsCard passionate">
             <img
@@ -130,6 +155,10 @@
           </div>
         </section>
 
+        <!-- ============================================ -->
+        <!--                    FOOTER                    -->
+        <!-- ============================================ -->
+
         <footer class="footer">
           <section class="talk">
             <h2>Let’s talk about your project</h2>
@@ -147,6 +176,11 @@
             />
           </a>
           <hr />
+
+          <!-- ============================================ -->
+          <!--                    FOOTER NAV                -->
+          <!-- ============================================ -->
+
           <ul class="footerNav">
             <li><a href="about.html">Our Company</a></li>
             <li><a href="locations.html">Locations</a></li>
@@ -169,20 +203,31 @@
             </p>
           </div>
           <div class="social">
-            <img
-              src="./assets/shared/desktop/icon-facebook.svg"
-              alt="facebook"
-            />
-            <img src="./assets/shared/desktop/icon-youtube.svg" alt="youtube" />
-            <img src="./assets/shared/desktop/icon-twitter.svg" alt="twitter" />
-            <img
-              src="./assets/shared/desktop/icon-pinterest.svg"
-              alt="pinterest"
-            />
-            <img
-              src="./assets/shared/desktop/icon-instagram.svg"
-              alt="instagram"
-            />
+            <a href="#">
+              <img
+                src="./assets/shared/desktop/icon-facebook.svg"
+                alt="facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-youtube.svg"
+                alt="youtube"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-twitter.svg"
+                alt="twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-pinterest.svg"
+                alt="pinterest"
+            /></a>
+            <a href="#">
+              <img
+                src="./assets/shared/desktop/icon-instagram.svg"
+                alt="instagram"
+            /></a>
           </div>
         </footer>
       </main>
