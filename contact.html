@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Designo Agency | Contact</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=fallback"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
     <div class="bodyContainer">
@@ -21,26 +25,35 @@
             alt="Header Logo"
             class="navLogo"
           />
-          <nav class="headerNav">
-            <img
-              src="./assets/shared/mobile/icon-hamburger.svg"
-              alt="Open navigation"
-              class="burger"
-            />
-            <ul class="navLinks">
-              <li>Our Company</li>
-              <li>Locations</li>
-              <li>Contact</li>
-            </ul>
-          </nav>
-        </header>
-        <nav class="mobileNav">
+          <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
+        <nav class="headerNav">
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           <ul class="navLinks">
-            <li>Our Company</li>
+            <li><a href="about.html">Our Company</a></li>
             <li>Locations</li>
             <li>Contact</li>
           </ul>
         </nav>
+      </header>
+      <nav class="mobileNav">
+        <ul class="navLinks">
+          <li><a class="navLink" href="about.html">Our Company</a></li>
+          <li><a class="navLink" href="locations.html">Locations</a></li>
+          <li><a class="navLink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ============================================ -->
+      <!--                    Main                   -->
+      <!-- ============================================ -->
+
       <main>
         <div class="overlay"></div>
         <div class="hero projectHero aboutHero">
@@ -53,11 +66,11 @@
               users, drop us a line.
             </p>
             <form>
-              <input type="text" id="name" placeholder="  Name" class="formInput">
-              <input type="email" id="email" placeholder="  Email" class="formInput">
-              <input type="number" id="phone" placeholder="  Phone" class="formInput">
-              <textarea name="message" id="message" cols="30" rows="5" placeholder="  Your Message" class="formInput"></textarea>
-              <button type="submit" class="button submit">Submit</button>
+              <input type="text" id="name" placeholder="  Name" class="formInput" required>
+              <input type="email" id="email" placeholder="  Email" class="formInput" required>
+              <input type="number" id="phone" placeholder="  Phone" class="formInput" required>
+              <textarea name="message" id="message" cols="30" rows="5" placeholder="  Your Message" class="formInput"  required></textarea>
+              <button type="submit" class="button buttonfx submit">Submit</button>
             </form>
           </div>
         </div>
@@ -70,7 +83,7 @@
             />
             <div class="aboutUsText">
               <h2>Canada</h2>
-              <button class="buttonPeach">see location</button>
+              <button class="buttonPeach buttonfx"><a href="locations.html#canadaMap">see location</a></button>
             </div>
           </div>
           <div class="aboutUsCard">
@@ -81,7 +94,7 @@
             />
             <div class="aboutUsText">
               <h2>Australia</h2>
-              <button class="buttonPeach">see location</button>
+              <button class="buttonPeach buttonfx"><a href="locations.html#ausMap">see location</a></button>
             </div>
           </div>
           <div class="aboutUsCard">
@@ -92,7 +105,7 @@
             />
             <div class="aboutUsText">
               <h2>United Kingdom</h2>
-              <button class="buttonPeach">see location</button>
+              <button class="buttonPeach buttonfx"><a href="locations.html#ukMap">see location</a></button>
             </div>
           </div>
         </section>
@@ -105,10 +118,14 @@
             id="contactLogo"
           />
           <hr>
+          <!-- ============================================ -->
+          <!--                    FOOTER NAV                -->
+          <!-- ============================================ -->
+
           <ul class="footerNav">
-            <li>our company</li>
-            <li>locations</li>
-            <li>contact</li>
+            <li><a href="about.html">Our Company</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="footerContact">
             <p>
@@ -127,25 +144,37 @@
             </p>
           </div>
           <div class="social">
-            <img
-              src="./assets/shared/desktop/icon-facebook.svg"
-              alt="facebook"
-            />
-            <img src="./assets/shared/desktop/icon-youtube.svg" alt="youtube" />
-            <img src="./assets/shared/desktop/icon-twitter.svg" alt="twitter" />
-            <img
-              src="./assets/shared/desktop/icon-pinterest.svg"
-              alt="pinterest"
-            />
-            <img
-              src="./assets/shared/desktop/icon-instagram.svg"
-              alt="instagram"
-            />
+            <a href="#">
+              <img
+                src="./assets/shared/desktop/icon-facebook.svg"
+                alt="facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-youtube.svg"
+                alt="youtube"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-twitter.svg"
+                alt="twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-pinterest.svg"
+                alt="pinterest"
+            /></a>
+            <a href="#">
+              <img
+                src="./assets/shared/desktop/icon-instagram.svg"
+                alt="instagram"
+            /></a>
           </div>
         </footer>
       </main>
     </div>
     <script type="text/javascript" src="./scripts/nav.js"></script>
+    <script type="text/javascript" src="./scripts/contactForm.js"></script>
   </body>
 </html>
 

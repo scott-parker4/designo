@@ -58,6 +58,7 @@ h3 {
   min-width: 375px;
   max-width: 1440px;
   margin: 0 auto;
+  height: 100vh;
 }
 
 header {

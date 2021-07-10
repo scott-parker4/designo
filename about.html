@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | Designo Agency Website Challenge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +12,9 @@
     />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
     <div class="bodyContainer">
@@ -36,7 +38,7 @@
             </span>
           </button>
           <ul class="navLinks">
-            <li>Our Company</li>
+            <li><a href="about.html">Our Company</a></li>
             <li>Locations</li>
             <li>Contact</li>
           </ul>
@@ -44,11 +46,16 @@
       </header>
       <nav class="mobileNav">
         <ul class="navLinks">
-          <li><a href="about.html">Our Company</a></li>
-          <li><a href="locations.html"></a>Locations</li>
-          <li><a href="contact.html"></a>Contact</li>
+          <li><a class="navLink" href="about.html">Our Company</a></li>
+          <li><a class="navLink" href="locations.html">Locations</a></li>
+          <li><a class="navLink" href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- ============================================ -->
+      <!--                    Main                      -->
+      <!-- ============================================ -->
+
       <main>
         <div class="overlay"></div>
         <img

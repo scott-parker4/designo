@@ -4,7 +4,13 @@
   border: none;
   text-transform: uppercase;
   font-weight: 500;
-  transition: all 0.2s;
+  /*transition: all 0.2s;*/
+  overflow: hidden;
+  transition: all 0.5s;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  z-index: 3;
 }
 
 .buttonPeach {
@@ -13,11 +19,61 @@
   border: none;
   text-transform: uppercase;
   font-weight: 500;
-  background-color: var(--peach);
+  overflow: hidden;
+  transition: all 0.5s;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  z-index: 3;
   color: white;
-  margin-top: 20px;
 }
 
-.button:hover {
+/*.button:hover {
   background-color: var(--lightPeach);
+}*/
+
+/*.buttonPeach:hover {
+  background-color: var(--lightPeach);
+}*/
+
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: var(--lightPeach); /* onhover background color */
+  z-index: -1;
+  transform: translate3D(
+    0,
+    -100%,
+    0
+  ); /* move elements above button so they don't appear initially */
+  transition: all 0.3s;
+}
+
+.button.buttonfx:before {
+  background-color: white; /* button default background color */
+}
+
+.buttonPeach.buttonfx:before {
+  background-color: var(--peach); /* button default background color */
+}
+
+.buttonfx:before {
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color: white;
+  transition: all 0.2s;
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.3s;
 }
