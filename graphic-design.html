@@ -4,35 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | Graphic Design</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=fallback"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
     <div class="bodyContainer">
       <header>
-        <img
-          src="./assets/shared/desktop/logo-dark.png"
-          alt="Header Logo"
-          class="navLogo"
-        />
-        <nav>
+        <a href="index.html">
           <img
-            src="./assets/shared/mobile/icon-hamburger.svg"
-            alt="Open navigation"
+            src="./assets/shared/desktop/logo-dark.png"
+            alt="Header Logo"
+            class="navLogo"
           />
+        </a>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
+        <nav class="headerNav">
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           <ul class="navLinks">
-            <li>Our Company</li>
+            <li><a href="about.html">Our Company</a></li>
             <li>Locations</li>
             <li>Contact</li>
           </ul>
         </nav>
       </header>
+      <nav class="mobileNav">
+        <ul class="navLinks">
+          <li><a class="navLink" href="about.html">Our Company</a></li>
+          <li><a class="navLink" href="locations.html">Locations</a></li>
+          <li><a class="navLink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ============================================ -->
+      <!--                    Main                      -->
+      <!-- ============================================ -->
+
       <main>
+        <div class="overlay"></div>
         <div class="hero projectHero">
           <div class="heroText projectHeroText">
             <h1 class="heroHeadline">Graphic Design</h1>
@@ -77,16 +102,25 @@
             </p>
           </div>
         </section>
-        <section class="projectsContainer">
-          <div class="project appDesignCard">
-            <h2>App Design</h2>
-            <h3>View Projects</h3>
+        <section class="projectsContainer" id="singleProjectPage">
+          <div class="project webDesignCard" id="projectPageCard">
+            <a href="web-design.html">
+            <div class="projectOverlay"></div></a>
+            <h2>Web Design</h2>
+            <h3>View Projects</a></h3>
           </div>
-          <div class="project graphicDesignCard">
-            <h2>Graphic Design</h2>
-            <h3>View Projects</h3>
+          <div class="project appDesignCard">
+            <a href="app-design.html">
+              <div class="projectOverlay"></div></a>
+            <h2>App Design</h2>
+            <h3><a href="app-design.html">View Projects</a></h3>
           </div>
         </section>
+
+        <!-- ============================================ -->
+        <!--                    FOOTER                    -->
+        <!-- ============================================ -->
+
         <footer class="footer">
           <section class="talk">
             <h2>Let’s talk about your project</h2>
@@ -94,18 +128,25 @@
               Ready to take it to the next level? Contact us today and find out
               how our expertise can help your business grow.
             </p>
-            <button class="button">get in touch</button>
+            <button class="button buttonfx">get in touch</button>
           </section>
-          <img
-            src="./assets/shared/desktop/logo-light.png"
-            alt="footer logo"
-            class="navLogo footerLogo"
-          />
+          <a href="index.html">
+            <img
+              src="./assets/shared/desktop/logo-light.png"
+              alt="footer logo"
+              class="navLogo footerLogo"
+            />
+          </a>
           <hr />
+
+          <!-- ============================================ -->
+          <!--                    FOOTER NAV                -->
+          <!-- ============================================ -->
+
           <ul class="footerNav">
-            <li>our company</li>
-            <li>locations</li>
-            <li>contact</li>
+            <li><a href="about.html">Our Company</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="footerContact">
             <p>
@@ -124,23 +165,35 @@
             </p>
           </div>
           <div class="social">
-            <img
-              src="./assets/shared/desktop/icon-facebook.svg"
-              alt="facebook"
-            />
-            <img src="./assets/shared/desktop/icon-youtube.svg" alt="youtube" />
-            <img src="./assets/shared/desktop/icon-twitter.svg" alt="twitter" />
-            <img
-              src="./assets/shared/desktop/icon-pinterest.svg"
-              alt="pinterest"
-            />
-            <img
-              src="./assets/shared/desktop/icon-instagram.svg"
-              alt="instagram"
-            />
+            <a href="#">
+              <img
+                src="./assets/shared/desktop/icon-facebook.svg"
+                alt="facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-youtube.svg"
+                alt="youtube"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-twitter.svg"
+                alt="twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/shared/desktop/icon-pinterest.svg"
+                alt="pinterest"
+            /></a>
+            <a href="#">
+              <img
+                src="./assets/shared/desktop/icon-instagram.svg"
+                alt="instagram"
+            /></a>
           </div>
         </footer>
       </main>
     </div>
+    <script type="text/javascript" src="./scripts/nav.js"></script>
   </body>
 </html>
