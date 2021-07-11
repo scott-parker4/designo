@@ -111,7 +111,7 @@ a {
 }
 
 .heroText {
-  padding: 80px 18px 0 18px;
+  padding: 90px 18px 0 18px;
   text-align: center;
 }
 
@@ -133,7 +133,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   align-self: center;
 }
 
@@ -219,7 +219,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   min-width: 327px;
 }
 
@@ -242,7 +242,7 @@ a {
   color: white;
   text-align: center;
   padding: 60px 0 60px 0;
-  width: 80%;
+  width: 90%;
   border-radius: 0.8rem;
   align-self: center;
   transform: translateY(-190px);
@@ -257,10 +257,13 @@ a {
   font-size: 2rem;
   line-height: 2.25rem;
   margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 50px;
 }
 
 .talk p {
   padding: 20px;
+  margin: 0;
 }
 
 .talk button {
@@ -283,7 +286,17 @@ a {
   margin: 64px 0 25px 0;
 }
 
+.footerNavContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
 .footerNav {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   text-decoration: none;
   margin: 0;
@@ -296,6 +309,13 @@ a {
   font-size: 0.875rem;
   letter-spacing: 0.2em;
   margin-bottom: 32px;
+}
+
+.footerContactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
 }
 
 .footerContact {
@@ -325,11 +345,17 @@ a {
   transition: all 0.2s;
 }
 
-hr {
+.mobileHr {
   border-top: 1px solid var(--darkGrey);
-  width: 80%;
+  width: 90%;
   opacity: 0.5;
+  margin-top: 0;
   margin-bottom: 30px;
+  display: block;
+}
+
+.desktopHr {
+  display: none;
 }
 
 /* Project Page Base Styles */
@@ -373,6 +399,11 @@ hr {
     font-size: 1rem;
   }
 
+  header {
+    width: 90%;
+    align-self: center;
+  }
+
   .hero {
     border-radius: 0.8rem;
     width: 90%;
@@ -402,6 +433,10 @@ hr {
     align-items: flex-start;
   }
 
+  .aboutUsCard:last-child {
+    margin-bottom: 50px;
+  }
+
   .talk {
     width: 90%;
   }
@@ -416,5 +451,59 @@ hr {
 
   .aboutImg {
     margin-right: 50px;
+  }
+
+  .footerNavContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .footerNav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footerNav li:not(:last-child) {
+    margin-right: 3em;
+  }
+
+  .mobileHr {
+    display: none;
+  }
+
+  .desktopHr {
+    border-top: 1px solid var(--darkGrey);
+    width: 90%;
+    opacity: 0.5;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  .footerLogo {
+    margin-top: 10px;
+  }
+
+  .footerContactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 90%;
+    text-align: left;
+  }
+
+  .footerContact p {
+    letter-spacing: 0.06rem;
+  }
+
+  .social {
+    margin-bottom: 45px;
+  }
+
+  .social a:not(:last-child) {
+    margin-right: 8px;
   }
 }
