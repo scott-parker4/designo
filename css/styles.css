@@ -107,6 +107,7 @@ a {
   background-repeat: no-repeat;
   background-position: 0% 50%;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .heroText {
@@ -357,4 +358,63 @@ hr {
 
 #singleProjectPage {
   margin-bottom: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Basic Styles */
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    border-radius: 0.8rem;
+    width: 90%;
+    align-self: center;
+  }
+
+  .heroText {
+    padding: 80px 95px 0 95px;
+  }
+
+  .projectsContainer {
+    width: 90%;
+  }
+
+  .aboutUs {
+    width: 90%;
+    align-self: center;
+  }
+
+  .aboutUsText {
+    text-align: left;
+  }
+
+  .aboutUsCard {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .talk {
+    width: 90%;
+  }
+
+  .talkText {
+    padding: 0 100px;
+  }
+
+  .talk p {
+    padding: 20px 0;
+  }
+
+  .aboutImg {
+    margin-right: 50px;
+  }
 }

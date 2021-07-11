@@ -5,8 +5,7 @@
 .navLinks {
   list-style-type: none;
 }
-/*
-.navLinks li:hover,*/
+
 .footerNav li:hover {
   opacity: 0.5;
   transition: all 0.2s;
@@ -121,23 +120,40 @@
     margin-right: 42px;
   }
 
-  /* Basic Styles */
-
-  h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-    font-weight: 500;
+  .footerNav li:hover {
+    opacity: 0.5;
+    transition: all 0.2s;
   }
 
-  p {
-    font-size: 1rem;
+  /* Underline styles */
+  .headerNavLink {
+    position: relative;
+    padding: 0.005rem 0;
+    -webkit-backface-visibility: hidden;
   }
 
-  .hero {
-    border-radius: 0.8rem;
+  /* Fade in */
+  .headerNavLink::after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--black);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
   }
 
-  .heroText {
-    padding: 80px 100px 0 100px;
+  .headerNavLink::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+  .headerNavLink:hover::after,
+  .headerNavLink:focus::after {
+    transform: scale(1);
   }
 }

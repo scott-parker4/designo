@@ -11,6 +11,7 @@
   position: relative;
   display: inline-block;
   z-index: 3;
+  letter-spacing: 0.1rem;
 }
 
 .buttonPeach {
@@ -26,6 +27,7 @@
   display: inline-block;
   z-index: 3;
   color: white;
+  letter-spacing: 0.1rem;
 }
 
 /*.button:hover {
