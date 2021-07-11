@@ -1,4 +1,4 @@
-.headerNav ul {
+.headerNavLinks {
   display: none;
 }
 
@@ -87,4 +87,57 @@
 
 .notVisible {
   visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Remove Mobile Nav */
+  .mobileNav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Header Nav Styles */
+
+  header {
+    padding: 50px 24px 50px 24px;
+  }
+
+  .headerNavLinks {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.125;
+    font-weight: 400;
+  }
+
+  .headerNavLink:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  /* Basic Styles */
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    border-radius: 0.8rem;
+  }
+
+  .heroText {
+    padding: 80px 100px 0 100px;
+  }
 }
