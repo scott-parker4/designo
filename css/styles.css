@@ -263,7 +263,7 @@ a {
 }
 
 .talk p {
-  padding: 20px;
+  padding: 20px 35px;
   margin: 0;
 }
 
@@ -390,7 +390,8 @@ a {
 @media only screen and (min-width: 768px) {
   /* Basic Styles */
 
-  h1 {
+  h1,
+  .talkText h2 {
     font-size: 3rem;
     line-height: 3rem;
     font-weight: 500;
@@ -451,7 +452,7 @@ a {
   }
 
   .talk p {
-    padding: 20px 0;
+    padding: 20px;
   }
 
   .aboutImg {
@@ -469,6 +470,10 @@ a {
   .footerNav {
     display: flex;
     flex-direction: row;
+  }
+
+  .footerLogo {
+    padding-top: 245px;
   }
 
   .footerNav li:not(:last-child) {
