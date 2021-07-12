@@ -49,14 +49,16 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <ul class="navLinks">
-            <li><a href="about.html">Our Company</a></li>
-            <li>Locations</li>
-            <li>Contact</li>
+          <ul class="headerNavLinks">
+            <li class="headerNavLink"><a href="about.html">Our Company</a></li>
+            <li class="headerNavLink">
+              <a href="locations.html">Locations</a>
+            </li>
+            <li class="headerNavLink"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <nav class="mobileNav">
+      <nav class="mobileNav notVisible">
         <ul class="navLinks">
           <li><a class="navLink" href="about.html">Our Company</a></li>
           <li><a class="navLink" href="locations.html">Locations</a></li>
@@ -150,78 +152,86 @@
 
         <footer class="footer">
           <section class="talk">
-            <h2>Let’s talk about your project</h2>
-            <p>
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
+            <div class="talkText">
+              <h2>Let’s talk about your project</h2>
+              <p>
+                Ready to take it to the next level? Contact us today and find
+                out how our expertise can help your business grow.
+              </p>
+            </div>
             <button class="button buttonfx">get in touch</button>
           </section>
-          <a href="index.html">
-            <img
-              src="./assets/shared/desktop/logo-light.png"
-              alt="footer logo"
-              class="navLogo footerLogo"
-            />
-          </a>
-          <hr />
 
           <!-- ============================================ -->
           <!--                    FOOTER NAV                -->
           <!-- ============================================ -->
 
-          <ul class="footerNav">
-            <li><a href="about.html">Our Company</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="footerContact">
-            <p>
-              <span class="footerContactBold">Designo Central Office</span>
-              <br />
-              3886 Wellington Street <br />
-              Toronto, Ontario M9C 3J5
-            </p>
-          </div>
-          <div class="footerContact">
-            <p>
-              <span class="footerContactBold">Contact Us</span>
-              <br />
-              P: +1 253-863-8967 <br />
-              M : contact@designo.co
-            </p>
-          </div>
-          <div class="social">
-            <a href="#">
+          <div class="footerNavContainer">
+            <a href="index.html">
               <img
-                src="./assets/shared/desktop/icon-facebook.svg"
-                alt="facebook"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/shared/desktop/icon-youtube.svg"
-                alt="youtube"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/shared/desktop/icon-twitter.svg"
-                alt="twitter"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/shared/desktop/icon-pinterest.svg"
-                alt="pinterest"
-            /></a>
-            <a href="#">
-              <img
-                src="./assets/shared/desktop/icon-instagram.svg"
-                alt="instagram"
-            /></a>
+                src="./assets/shared/desktop/logo-light.png"
+                alt="footer logo"
+                class="navLogo footerLogo"
+              />
+            </a>
+            <hr class="mobileHr" />
+            <ul class="footerNav">
+              <li><a href="about.html">Our Company</a></li>
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <hr class="desktopHr" />
+          <div class="footerContactContainer">
+            <div class="footerContact">
+              <p>
+                <span class="footerContactBold">Designo Central Office</span>
+                <br />
+                3886 Wellington Street <br />
+                Toronto, Ontario M9C 3J5
+              </p>
+            </div>
+
+            <div class="footerContact">
+              <p>
+                <span class="footerContactBold">Contact Us</span>
+                <br />
+                P: +1 253-863-8967 <br />
+                M : contact@designo.co
+              </p>
+            </div>
+            <div class="social">
+              <a href="#">
+                <img
+                  src="./assets/shared/desktop/icon-facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/shared/desktop/icon-youtube.svg"
+                  alt="youtube"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/shared/desktop/icon-twitter.svg"
+                  alt="twitter"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/shared/desktop/icon-pinterest.svg"
+                  alt="pinterest"
+              /></a>
+              <a href="#">
+                <img
+                  src="./assets/shared/desktop/icon-instagram.svg"
+                  alt="instagram"
+              /></a>
+            </div>
           </div>
         </footer>
       </main>
     </div>
-    <script type="text/javascript" src="./scripts/leaflet.js"></script>
+    <script type="text/javascript" src="scripts/leaflet.js"></script>
     <script type="text/javascript" src="./scripts/nav.js"></script>
   </body>
 </html>

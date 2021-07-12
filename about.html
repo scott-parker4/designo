@@ -37,14 +37,16 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <ul class="navLinks">
-            <li><a href="about.html">Our Company</a></li>
-            <li>Locations</li>
-            <li>Contact</li>
+          <ul class="headerNavLinks">
+            <li class="headerNavLink"><a href="about.html">Our Company</a></li>
+            <li class="headerNavLink">
+              <a href="locations.html">Locations</a>
+            </li>
+            <li class="headerNavLink"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <nav class="mobileNav">
+      <nav class="mobileNav notVisible">
         <ul class="navLinks">
           <li><a class="navLink" href="about.html">Our Company</a></li>
           <li><a class="navLink" href="locations.html">Locations</a></li>
@@ -62,6 +64,12 @@
           src="./assets/about/mobile/image-about-hero.jpg"
           width="100%"
           alt="about us"
+          id="aboutHeroSm"
+        />
+        <img
+          src="./assets/about/tablet/image-about-hero.jpg"
+          alt="about us"
+          id="aboutHeroLrg"
         />
         <div class="hero projectHero aboutHero">
           <div class="heroText projectHeroText">
@@ -77,58 +85,69 @@
         </div>
 
         <section class="aboutUs aboutPage">
-          <div class="aboutCard">
+          <div class="aboutCard aboutPageCard">
             <img
               src="./assets/about/mobile/image-world-class-talent.jpg"
               width="100%"
               alt="world class talent"
+              class="roundedImg"
+              id="aboutHeroSm"
+            />
+            <img
+              src="./assets/about/tablet/image-world-class-talent.jpg"
+              alt="world class talent"
+              class="roundedImg"
+              id="aboutHeroLrg"
             />
             <div class="aboutCardText">
-              <h1 class="aboutCardHeadline">World Class talent</h1>
-              <p>
-                We are a crew of strategists, problem-solvers, and
-                technologists. Every design is thoughtfully crafted from concept
-                to launch, ensuring success in its given market. We are
-                constantly updating our skills in a myriad of platforms.
-              </p>
-              <p>
-                Our team is multi-disciplinary and we are not merely interested
-                in form — content and meaning are just as important. We give
-                great importance to craftsmanship, service, and prompt delivery.
-                Clients have always been impressed with our high-quality
-                outcomes that encapsulates their brand’s story and mission.
-              </p>
+              <div>
+                <h1 class="aboutCardHeadline">World Class talent</h1>
+                <p>
+                  We are a crew of strategists, problem-solvers, and
+                  technologists. Every design is thoughtfully crafted from
+                  concept to launch, ensuring success in its given market. We
+                  are constantly updating our skills in a myriad of platforms.
+                </p>
+                <p>
+                  Our team is multi-disciplinary and we are not merely
+                  interested in form — content and meaning are just as
+                  important. We give great importance to craftsmanship, service,
+                  and prompt delivery. Clients have always been impressed with
+                  our high-quality outcomes that encapsulates their brand’s
+                  story and mission.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="aboutUsCard">
+          <div class="aboutUsCard aboutPageCard">
             <img
               src="./assets/shared/desktop/illustration-canada.svg"
               alt="canada"
               class="canada"
             />
-            <div class="aboutUsText">
+            <div class="aboutUsText aboutPageText">
               <h2>Canada</h2>
               <button class="buttonPeach buttonfx">see location</button>
             </div>
           </div>
-          <div class="aboutUsCard">
+          <div class="aboutUsCard aboutPageCard">
             <img
               src="./assets/shared/desktop/illustration-australia.svg"
               alt="Australia"
               class="Australia"
             />
-            <div class="aboutUsText">
+            <div class="aboutUsText aboutPageText">
               <h2>Australia</h2>
               <button class="buttonPeach buttonfx">see location</button>
             </div>
           </div>
-          <div class="aboutUsCard">
+          <div class="aboutUsCard aboutPageCard">
             <img
               src="./assets/shared/desktop/illustration-united-kingdom.svg"
               alt="United Kingdom"
               class="United Kingdom"
             />
-            <div class="aboutUsText">
+            <div class="aboutUsText aboutPageText">
               <h2>United Kingdom</h2>
               <button class="buttonPeach buttonfx">see location</button>
             </div>
@@ -138,22 +157,31 @@
               src="./assets/about/mobile/image-real-deal.jpg"
               width="100%"
               alt="The real deal"
+              id="aboutHeroSm"
+            />
+            <img
+              src="./assets/about/tablet/image-real-deal.jpg"
+              width="100%"
+              alt="The real deal"
+              id="aboutHeroLrg"
             />
             <div class="aboutCardText">
-              <h1 class="aboutCardHeadline">The real deal</h1>
-              <p>
-                As strategic partners in our clients’ businesses, we are ready
-                to take on any challenge as our own. Solving real problems
-                require empathy and collaboration, and we strive to bring a
-                fresh perspective to every opportunity. We make design and
-                technology more accessible and give you tools to measure
-                success.
-              </p>
-              <p>
-                We are visual storytellers in appealing and captivating ways. By
-                combining business and marketing strategies, we inspire
-                audiences to take action and drive real results.
-              </p>
+              <div>
+                <h1 class="aboutCardHeadline">The real deal</h1>
+                <p>
+                  As strategic partners in our clients’ businesses, we are ready
+                  to take on any challenge as our own. Solving real problems
+                  require empathy and collaboration, and we strive to bring a
+                  fresh perspective to every opportunity. We make design and
+                  technology more accessible and give you tools to measure
+                  success.
+                </p>
+                <p>
+                  We are visual storytellers in appealing and captivating ways.
+                  By combining business and marketing strategies, we inspire
+                  audiences to take action and drive real results.
+                </p>
+              </div>
             </div>
           </div>
         </section>

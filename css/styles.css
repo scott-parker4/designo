@@ -107,6 +107,7 @@ a {
   background-repeat: no-repeat;
   background-position: 0% 50%;
   overflow: hidden;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
