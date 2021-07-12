@@ -97,7 +97,7 @@ a {
   position: relative;
   background-color: var(--peach);
   width: 100%;
-  min-height: 843px;
+  min-height: 875px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -112,8 +112,9 @@ a {
 }
 
 .heroText {
-  padding: 90px 18px 0 18px;
+  padding: 90px 20px 0 20px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .heroText p {
@@ -123,7 +124,7 @@ a {
 .heroPhone {
   width: 600px;
   position: absolute;
-  top: 330px;
+  top: 348px;
 }
 
 .heroHeadline {
