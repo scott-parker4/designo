@@ -407,6 +407,10 @@ a {
 
   .hero {
     border-radius: 0.8rem;
+  }
+
+  .hero,
+  .hero.projectHero.aboutHero {
     width: 90%;
     align-self: center;
   }
