@@ -37,14 +37,16 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <ul class="navLinks">
-            <li><a href="about.html">Our Company</a></li>
-            <li>Locations</li>
-            <li>Contact</li>
+          <ul class="headerNavLinks">
+            <li class="headerNavLink"><a href="about.html">Our Company</a></li>
+            <li class="headerNavLink">
+              <a href="locations.html">Locations</a>
+            </li>
+            <li class="headerNavLink"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <nav class="mobileNav">
+      <nav class="mobileNav notVisible">
         <ul class="navLinks">
           <li><a class="navLink" href="about.html">Our Company</a></li>
           <li><a class="navLink" href="locations.html">Locations</a></li>
@@ -53,7 +55,7 @@
       </nav>
 
       <!-- ============================================ -->
-      <!--                    Main                      -->
+      <!--                    Main                   -->
       <!-- ============================================ -->
 
       <main>
@@ -68,72 +70,86 @@
           </div>
         </div>
         <section class="singleProjectContainer webDesignContainer">
-          <img
-            src="./assets/web-design/desktop/image-express.jpg"
-            alt="express shipping"
-            class="express projectImg"
-          />
-          <div class="projectTextCard">
-            <h2 class="projectTitle">express</h2>
-            <p class="projectText">
-              A multi-carrier shipping website for ecommerce business
-            </p>
+          <div class="projectCard">
+            <img
+              src="./assets/web-design/desktop/image-express.jpg"
+              alt="express shipping"
+              class="express projectImg"
+            />
+            <div class="projectTextCard">
+              <h2 class="projectTitle">express</h2>
+              <p class="projectText">
+                A multi-carrier shipping website for ecommerce business
+              </p>
+            </div>
           </div>
-          <img
-            src="./assets/web-design/desktop/image-transfer.jpg"
-            alt="transfer"
-            class="roundedImg projectImg"
-          />
-          <div class="projectTextCard">
-            <h2 class="projectTitle">transfer</h2>
-            <p class="projectText">
-              Site for low-cost money transfers and sending money within seconds
-            </p>
+          <div class="projectCard">
+            <img
+              src="./assets/web-design/desktop/image-transfer.jpg"
+              alt="transfer"
+              class="roundedImg projectImg"
+            />
+            <div class="projectTextCard">
+              <h2 class="projectTitle">transfer</h2>
+              <p class="projectText">
+                Site for low-cost money transfers and sending money within
+                seconds
+              </p>
+            </div>
           </div>
-          <img
-            src="./assets/web-design/desktop/image-photon.jpg"
-            alt="photon"
-            class="roundedImg projectImg"
-          />
-          <div class="projectTextCard">
-            <h2 class="projectTitle">photon</h2>
-            <p class="projectText">
-              A state-of-the-art music player with high-resolution audio and DSP
-              effects
-            </p>
+          <div class="projectCard">
+            <img
+              src="./assets/web-design/desktop/image-photon.jpg"
+              alt="photon"
+              class="roundedImg projectImg"
+            />
+            <div class="projectTextCard">
+              <h2 class="projectTitle">photon</h2>
+              <p class="projectText">
+                A state-of-the-art music player with high-resolution audio and
+                DSP effects
+              </p>
+            </div>
           </div>
-          <img
-            src="./assets/web-design/desktop/image-builder.jpg"
-            alt="builder"
-            class="roundedImg projectImg"
-          />
-          <div class="projectTextCard">
-            <h2 class="projectTitle">builder</h2>
-            <p class="projectText">
-              Connects users with local contractors based on their location
-            </p>
+          <div class="projectCard">
+            <img
+              src="./assets/web-design/desktop/image-builder.jpg"
+              alt="builder"
+              class="roundedImg projectImg"
+            />
+            <div class="projectTextCard">
+              <h2 class="projectTitle">builder</h2>
+              <p class="projectText">
+                Connects users with local contractors based on their location
+              </p>
+            </div>
           </div>
-          <img
-            src="./assets/web-design/desktop/image-blogr.jpg"
-            alt="blogr"
-            class="roundedImg projectImg"
-          />
-          <div class="projectTextCard">
-            <h2 class="projectTitle">blogr</h2>
-            <p class="projectText">
-              Blogr is a platform for creating an online blog or publication
-            </p>
+          <div class="projectCard">
+            <img
+              src="./assets/web-design/desktop/image-blogr.jpg"
+              alt="blogr"
+              class="roundedImg projectImg"
+            />
+            <div class="projectTextCard">
+              <h2 class="projectTitle">blogr</h2>
+              <p class="projectText">
+                Blogr is a platform for creating an online blog or publication
+              </p>
+            </div>
           </div>
-          <img
-            src="./assets/web-design/desktop/image-camp.jpg"
-            alt="camp"
-            class="roundedImg projectImg"
-          />
-          <div class="projectTextCard">
-            <h2 class="projectTitle">camp</h2>
-            <p class="projectText">
-              Get expert training in coding, data, design, and digital marketing
-            </p>
+          <div class="projectCard">
+            <img
+              src="./assets/web-design/desktop/image-camp.jpg"
+              alt="camp"
+              class="roundedImg projectImg"
+            />
+            <div class="projectTextCard">
+              <h2 class="projectTitle">camp</h2>
+              <p class="projectText">
+                Get expert training in coding, data, design, and digital
+                marketing
+              </p>
+            </div>
           </div>
         </section>
         <section class="projectsContainer" id="singleProjectPage">
@@ -157,73 +173,81 @@
 
         <footer class="footer">
           <section class="talk">
-            <h2>Let’s talk about your project</h2>
-            <p>
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
+            <div class="talkText">
+              <h2>Let’s talk about your project</h2>
+              <p>
+                Ready to take it to the next level? Contact us today and find
+                out how our expertise can help your business grow.
+              </p>
+            </div>
             <button class="button buttonfx">get in touch</button>
           </section>
-          <a href="index.html">
-            <img
-              src="./assets/shared/desktop/logo-light.png"
-              alt="footer logo"
-              class="navLogo footerLogo"
-            />
-          </a>
-          <hr />
 
           <!-- ============================================ -->
           <!--                    FOOTER NAV                -->
           <!-- ============================================ -->
 
-          <ul class="footerNav">
-            <li><a href="about.html">Our Company</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="footerContact">
-            <p>
-              <span class="footerContactBold">Designo Central Office</span>
-              <br />
-              3886 Wellington Street <br />
-              Toronto, Ontario M9C 3J5
-            </p>
-          </div>
-          <div class="footerContact">
-            <p>
-              <span class="footerContactBold">Contact Us</span>
-              <br />
-              P: +1 253-863-8967 <br />
-              M : contact@designo.co
-            </p>
-          </div>
-          <div class="social">
-            <a href="#">
+          <div class="footerNavContainer">
+            <a href="index.html">
               <img
-                src="./assets/shared/desktop/icon-facebook.svg"
-                alt="facebook"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/shared/desktop/icon-youtube.svg"
-                alt="youtube"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/shared/desktop/icon-twitter.svg"
-                alt="twitter"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/shared/desktop/icon-pinterest.svg"
-                alt="pinterest"
-            /></a>
-            <a href="#">
-              <img
-                src="./assets/shared/desktop/icon-instagram.svg"
-                alt="instagram"
-            /></a>
+                src="./assets/shared/desktop/logo-light.png"
+                alt="footer logo"
+                class="navLogo footerLogo"
+              />
+            </a>
+            <hr class="mobileHr" />
+            <ul class="footerNav">
+              <li><a href="about.html">Our Company</a></li>
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <hr class="desktopHr" />
+          <div class="footerContactContainer">
+            <div class="footerContact">
+              <p>
+                <span class="footerContactBold">Designo Central Office</span>
+                <br />
+                3886 Wellington Street <br />
+                Toronto, Ontario M9C 3J5
+              </p>
+            </div>
+
+            <div class="footerContact">
+              <p>
+                <span class="footerContactBold">Contact Us</span>
+                <br />
+                P: +1 253-863-8967 <br />
+                M : contact@designo.co
+              </p>
+            </div>
+            <div class="social">
+              <a href="#">
+                <img
+                  src="./assets/shared/desktop/icon-facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/shared/desktop/icon-youtube.svg"
+                  alt="youtube"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/shared/desktop/icon-twitter.svg"
+                  alt="twitter"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/shared/desktop/icon-pinterest.svg"
+                  alt="pinterest"
+              /></a>
+              <a href="#">
+                <img
+                  src="./assets/shared/desktop/icon-instagram.svg"
+                  alt="instagram"
+              /></a>
+            </div>
           </div>
         </footer>
       </main>

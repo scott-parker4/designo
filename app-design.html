@@ -37,14 +37,14 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <ul class="navLinks">
-            <li><a href="about.html">Our Company</a></li>
-            <li>Locations</li>
-            <li>Contact</li>
+          <ul class="headerNavLinks">
+            <li class="headerNavLink"><a href="about.html">Our Company</a></li>
+            <li class="headerNavLink"><a href="locations.html">Locations</a></li>
+            <li class="headerNavLink"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <nav class="mobileNav">
+      <nav class="mobileNav notVisible">
         <ul class="navLinks">
           <li><a class="navLink" href="about.html">Our Company</a></li>
           <li><a class="navLink" href="locations.html">Locations</a></li>
@@ -53,7 +53,7 @@
       </nav>
 
       <!-- ============================================ -->
-      <!--                    Main                      -->
+      <!--                    Main                   -->
       <!-- ============================================ -->
 
       <main>
@@ -68,6 +68,7 @@
           </div>
         </div>
         <section class="singleProjectContainer webDesignContainer">
+          <div class="projectCard">
           <img
             src="./assets/app-design/desktop/image-airfilter.jpg"
             alt="airfilter"
@@ -80,6 +81,8 @@
               air
             </p>
           </div>
+        </div>
+        <div class="projectCard">
           <img
             src="./assets/app-design/desktop/image-eyecam.jpg"
             alt="eyecam"
@@ -92,6 +95,8 @@
               time
             </p>
           </div>
+        </div>
+        <div class="projectCard">
           <img
             src="./assets/app-design/desktop/image-faceit.jpg"
             alt="faceit"
@@ -103,6 +108,8 @@
               Get to meet your favorite internet superstar with the faceit app
             </p>
           </div>
+        </div>
+        <div class="projectCard">
           <img
             src="./assets/app-design/desktop/image-todo.jpg"
             alt="todo"
@@ -114,6 +121,8 @@
               A todo app that features cloud sync with light and dark mode
             </p>
           </div>
+        </div>
+        <div class="projectCard">
           <img
             src="./assets/app-design/desktop/image-loopstudios.jpg"
             alt="Loopstudios"
@@ -123,6 +132,7 @@
             <h2 class="projectTitle">Loopstudios</h2>
             <p class="projectText">A VR experience app made for Loopstudios</p>
           </div>
+        </div>
         </section>
         <section class="projectsContainer" id="singleProjectPage">
           <div class="project webDesignCard" id="projectPageCard">
@@ -145,13 +155,21 @@
 
         <footer class="footer">
           <section class="talk">
+            <div class="talkText">
             <h2>Let’s talk about your project</h2>
             <p>
               Ready to take it to the next level? Contact us today and find out
               how our expertise can help your business grow.
             </p>
+          </div>
             <button class="button buttonfx">get in touch</button>
           </section>
+
+          <!-- ============================================ -->
+          <!--                    FOOTER NAV                -->
+          <!-- ============================================ -->
+
+          <div class="footerNavContainer">
           <a href="index.html">
             <img
               src="./assets/shared/desktop/logo-light.png"
@@ -159,17 +177,15 @@
               class="navLogo footerLogo"
             />
           </a>
-          <hr />
-
-          <!-- ============================================ -->
-          <!--                    FOOTER NAV                -->
-          <!-- ============================================ -->
-
+          <hr class="mobileHr"/>
           <ul class="footerNav">
             <li><a href="about.html">Our Company</a></li>
             <li><a href="locations.html">Locations</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+        </div>
+        <hr class="desktopHr">
+        <div class="footerContactContainer">
           <div class="footerContact">
             <p>
               <span class="footerContactBold">Designo Central Office</span>
@@ -178,6 +194,7 @@
               Toronto, Ontario M9C 3J5
             </p>
           </div>
+          
           <div class="footerContact">
             <p>
               <span class="footerContactBold">Contact Us</span>
@@ -213,6 +230,7 @@
                 alt="instagram"
             /></a>
           </div>
+        </div>
         </footer>
       </main>
     </div>

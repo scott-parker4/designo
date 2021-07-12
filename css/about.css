@@ -70,4 +70,8 @@
   .heroText.projectHeroText {
     padding: 80px 95px 80px 95px;
   }
+
+  .aboutUs.contactPage {
+    margin: 0;
+  }
 }

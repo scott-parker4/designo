@@ -489,8 +489,12 @@ a {
     border-top: 1px solid var(--darkGrey);
     width: 90%;
     opacity: 0.5;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     display: block;
+  }
+
+  .footer {
+    padding-bottom: 30px;
   }
 
   .footerLogo {
@@ -516,5 +520,37 @@ a {
 
   .social a:not(:last-child) {
     margin-right: 8px;
+  }
+
+  .singleProjectContainer {
+    width: 90%;
+  }
+
+  .projectImg {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .projectImg.roundedImg {
+    border-radius: 0.8rem 0 0 0.8rem;
+    margin-bottom: 40px;
+  }
+
+  #contactPageFooter {
+    margin-top: 0px;
+    padding-top: 70px;
+  }
+
+  #contactHeroText {
+    text-align: left;
+  }
+
+  #formSubmit {
+    align-self: flex-end;
+  }
+
+  #contactHero {
+    margin-bottom: 0;
   }
 }
