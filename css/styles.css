@@ -410,6 +410,7 @@ a {
 
   .hero {
     border-radius: 0.8rem;
+    background-position: 300% 50%;
   }
 
   .hero,
