@@ -251,7 +251,8 @@ a {
   position: absolute;
   background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
   background-repeat: no-repeat;
-  background-position: right -305px bottom -90px;
+  /*background-position: right -305px bottom -90px;*/
+  background-position: right 60% bottom 50%;
 }
 
 .talk h2 {

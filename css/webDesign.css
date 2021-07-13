@@ -1,6 +1,6 @@
 .hero.projectHero {
   background-image: url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
-  background-position: top 0 right -25px;
+  background-position: top 100% right -25px;
   background-size: 1000px;
   min-height: 320px;
   justify-content: center;
@@ -10,7 +10,7 @@
 .hero.projectHero.aboutHero {
   margin-bottom: 0;
   background-size: 850px;
-  background-position: top -160px right 0px;
+  background-position: top 300% right 0;
 }
 
 .hero.projectHero p {
@@ -40,6 +40,12 @@
   letter-spacing: 0.05rem;
 }
 
+@media only screen and (min-width: 508px) {
+  .hero.projectHero.aboutHero {
+    background-position: top 225% right 0;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .projectCard {
     display: flex;
@@ -53,4 +59,13 @@
     justify-content: center;
     padding: 40px;
   }
+
+  .hero.projectHero {
+    background-image: url(../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
+    background-position: top 50% right 60%;
+  }
+
+  .hero.projectHero.aboutHero {
+    background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+    background-position: top 150% right -50%;
 }
