@@ -20,7 +20,7 @@ html {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.0625rem;
-  line-height: 1.4rem;
+  line-height: 1.75;
   word-spacing: 0.1rem;
 }
 
@@ -37,7 +37,7 @@ main {
 
 h1 {
   font-size: 2rem;
-  line-height: 2.25rem;
+  line-height: 2.25;
   font-weight: 500;
 }
 
@@ -476,7 +476,7 @@ a {
   }
 
   .footerLogo {
-    padding-top: 245px;
+    padding-top: 260px;
   }
 
   .footerNav li:not(:last-child) {
