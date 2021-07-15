@@ -146,7 +146,7 @@ a {
   justify-content: center;
   min-width: 327px;
   width: 100%;
-  height: 250px;
+  padding: 50px 0;
   text-align: center;
   text-transform: uppercase;
   border-radius: 0.8rem;
@@ -170,8 +170,11 @@ a {
 }
 
 .project h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
   z-index: 6;
   pointer-events: none;
+  letter-spacing: 0.2rem;
 }
 
 .webDesignCard {
@@ -537,6 +540,11 @@ a {
   .projectImg.roundedImg {
     border-radius: 0.8rem 0 0 0.8rem;
     margin-bottom: 40px;
+  }
+
+  .project h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
   }
 
   #contactPageFooter {
